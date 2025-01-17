@@ -38,6 +38,9 @@ jobs:
       - name: Repo-Variablen
         run: echo "${{ toJson(vars) }}"
 
+      - name: Beispiel vom Secret
+        run: echo "${{ secrets.MEIN_DB_PASSWORD }}"
+
       - name: Art vom Start der Workflow
         run: echo "Die Workflow wurde durch ${{ github.event_name }} gestartet"
 
