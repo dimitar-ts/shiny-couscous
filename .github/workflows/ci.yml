@@ -35,6 +35,9 @@ jobs:
       - name: Variablen
         run: echo "${{ toJson(github) }}"
 
+      - name: Repo-Variablen
+        run: echo "${{ toJson(vars) }}"
+
       - name: Art vom Start der Workflow
         run: echo "Die Workflow wurde durch ${{ github.event_name }} gestartet"
 
