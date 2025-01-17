@@ -51,6 +51,9 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
+      - name: Platzhalter für die Umgebungsvariable
+        run: echo "Die Node-Version ist $NODE_VERSION"
+
       - name: Überprüfung von Node Version
         run: node --version 
 
